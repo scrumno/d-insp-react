@@ -1,0 +1,40 @@
+{
+	"name": "@scrumno/d-insp-react",
+	"version": "2.2.25",
+	"description": "Zero-config React Inspector for Fetch/XHR and Renders",
+	"main": "dist/index.js",
+	"module": "dist/index.esm.js",
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "rollup -c rollup.config.mjs",
+		"test": "jest",
+		"prepublishOnly": "npm run build"
+	},
+	"peerDependencies": {
+		"react": ">=18",
+		"react-dom": ">=18"
+	},
+	"dependencies": {
+		"lucide-react": "^0.555.0",
+		"tslib": "^2.6.0",
+		"zustand": "^4.4.0"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^25.0.0",
+		"@rollup/plugin-node-resolve": "^15.2.0",
+		"@rollup/plugin-typescript": "^11.1.0",
+		"@types/node": "^24.10.1",
+		"@types/react": "^18.2.0",
+		"@types/react-dom": "^18.2.0",
+		"autoprefixer": "^10.4.0",
+		"postcss": "^8.5.6",
+		"rollup": "^4.53.3",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-postcss": "^4.0.2",
+		"typescript": "^5.3.0"
+	}
+}
